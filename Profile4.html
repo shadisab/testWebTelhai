@@ -1,0 +1,208 @@
+<html>
+<style>
+    .container {
+        background-color: white;
+        overflow: hidden;
+        border: 1px solid #000;
+        max-width: 450px;
+        height: 700px;
+        position: relative;
+        padding: 0px;
+        margin: auto;
+    }
+
+    .container-img {
+        overflow: hidden;
+        width: 450px;
+        height: 300px;
+        position: relative;
+        padding: 0px;
+    }
+
+    .container-body {
+        overflow: hidden;
+        border-bottom: 1px solid black;
+        width: 450px;
+        height: 341px;
+        position: relative;
+        padding: 0px;
+    }
+
+    .container .btn {
+        position: absolute;
+        bottom: 4%;
+        left: 5%;
+        font-size: 16px;
+    }
+
+    .rounded-button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        border: 2px solid white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .rounded-button1 {
+        border-radius: 50%
+    }
+
+    .name {
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btn1 {
+        width: 33.33%;
+        height: 59px;
+        border-color: transparent;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn2 {
+        width: 33.33%;
+        height: 59px;
+        border-color: transparent;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        left: 150;
+        padding: 0px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn3 {
+        width: 33.33%;
+        height: 59px;
+        border-color: transparent;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .image-flip {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .my-td {
+        width: 25%;
+        height: 25%;
+    }
+    .home-click{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 10%;
+        height: auto;
+    }
+</style>
+
+<head>
+    <script>
+        var likes=1;
+        function Increaselike(){
+            document.getElementById("like").innerHTML = likes++;
+        }
+    </script>
+</head>
+
+<body background="./Images/background.png" style = "background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="container-img">
+            <img height="100%" width="auto" src="./Images/jon_snow.jpg" />
+            <div class="name">
+                <h1> Jon Snow</h1>
+            </div>
+<body background="./Images/background.png" style = "background-repeat: no-repeat; background-size: cover;">
+    <div> <a href = "HomeMenu.html"> <img class ="image-flip home-click" src ="./Images/back to home.png"/> </a> </div>
+        </div>
+        <div class="container-body">
+            <table width="100%" height="100%">
+                <tr>
+                    <td class="my-td" align="center"><img width="50px" height="auto"
+                            src="./Images/Phone-icon.png" />
+                    </td>
+                    <td>
+                        <span style="font-family: 'Times New Roman', Times, serif;font-size: 18px ">052-9768678</span><br>
+                        <span style="font-family: 'Times New Roman', Times, serif;font-size: 13px ;color: gray">Mobile</span>
+                    </td>
+                    <td class="my-td" align="center"><img width="30px" height="auto"
+                            src="./Images/message icon.png" />
+                    </td>
+                </tr>
+                <tr style="border-bottom: 1px solid black">
+                    <td class="my-td" align="center"></td>
+                    <td>
+                        <span style="font-family: 'Times New Roman', Times, serif;font-size: 18px ">023-7623562</span><br>
+                        <span style="font-family: 'Times New Roman', Times, serif;font-size: 13px ;color: gray">Home</span>
+                    </td>
+                    <td class="my-td" align="center"> <img width="30px" height="auto"
+                            src="./Images/message icon.png" /></td>
+                </tr>
+                <tr>
+                    <td class="my-td" align="center"> <img width="50px" height="auto"
+                            src="./Images/mail-icon.png" /> </td>
+                    <td> Egon-Targarian@gmail.com</td>
+                    <td class="my-td" align="center"> </td>
+                </tr>
+                <tr>
+                    <td class="my-td" align="center"> </td>
+                    <td> JonSnowWork@gmail.com</td>
+                    <td class="my-td" align="center"> </td>
+                </tr>
+            </table>
+        </div>
+        <div> 
+            <a href="Profile5.html"> 
+                <button class="btn1"> 
+                    <img class="image-flip" width="auto" height="30px" src="./Images/arrow.svg" />
+                 </button> 
+            </a> 
+        </div>
+        <div>
+            <button class="btn2"  onclick="Increaselike()">
+                    <img width="auto" height="60px" src="./Images/like-button.gif" />
+                    <div>
+                        <span id = "like" style="position: absolute; bottom:32%; right:20%"></span>
+                    </div>
+
+            </button>
+        </div>
+        <div>
+            <a href="Profile3.html">
+                  <button class="btn3"> 
+                      <img width="auto" height="30px" src="./Images/arrow.svg" />
+                 </button> 
+            </a> 
+        </div>
+    </div>
+</body>
+
+</html>
